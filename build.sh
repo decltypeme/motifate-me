@@ -1,0 +1,1 @@
+g++ *.cpp -o ay_7aga
