@@ -1,8 +1,6 @@
-#include <cstdlib>
-#include <iostream>
-#include <string>
-#include <vector>
-#include <fstream>
+#ifndef OPERATIONS_H
+#define OPERATIONS_H
+
 #include "duration.h"
 
 using namespace std;
@@ -49,10 +47,11 @@ melody_t scale(melody_t in_melody, duration_t dur, int excute);
  * sum(note_duration) == total_duration
  * 
  * */
-melody_t generate_random_motif(duration_t min_duration, duration_t max_duration, duration_t total_duration);
+melody_t generate_random_motif(int motif_notes_num = 20);
 
 
 void extend_main_melody(melody_t& subject_melody,melody_t motif);
 
 melody_t generate_new_melody(melody_t motif);
 
+#endif
